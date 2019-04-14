@@ -1,0 +1,6 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Echo\Echo\bin\Debug\Echo.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Echo\Echo\bin\Debug\Echo.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Echo\Echo\bin\Debug\Echo.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Echo\Echo\obj\Debug\Echo.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Echo\Echo\obj\Debug\Echo.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Echo\Echo\obj\Debug\Echo.pdb

@@ -1,0 +1,7 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_Random\DoorLock_6Num_Random\obj\Debug\DoorLock_6Num_Random.csprojAssemblyReference.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_Random\DoorLock_6Num_Random\obj\Debug\DoorLock_6Num_Random.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_Random\DoorLock_6Num_Random\bin\Debug\DoorLock_6Num_Random.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_Random\DoorLock_6Num_Random\bin\Debug\DoorLock_6Num_Random.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_Random\DoorLock_6Num_Random\bin\Debug\DoorLock_6Num_Random.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_Random\DoorLock_6Num_Random\obj\Debug\DoorLock_6Num_Random.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_Random\DoorLock_6Num_Random\obj\Debug\DoorLock_6Num_Random.pdb

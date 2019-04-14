@@ -1,0 +1,7 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Operators\Operators\bin\Debug\Operators.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Operators\Operators\bin\Debug\Operators.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Operators\Operators\bin\Debug\Operators.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Operators\Operators\obj\Debug\Operators.csprojAssemblyReference.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Operators\Operators\obj\Debug\Operators.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Operators\Operators\obj\Debug\Operators.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Operators\Operators\obj\Debug\Operators.pdb

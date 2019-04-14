@@ -1,0 +1,7 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\StudentList\StudentList\bin\Debug\StudentList.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\StudentList\StudentList\bin\Debug\StudentList.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\StudentList\StudentList\bin\Debug\StudentList.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\StudentList\StudentList\obj\Debug\StudentList.csprojAssemblyReference.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\StudentList\StudentList\obj\Debug\StudentList.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\StudentList\StudentList\obj\Debug\StudentList.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\StudentList\StudentList\obj\Debug\StudentList.pdb

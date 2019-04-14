@@ -1,0 +1,7 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test1\test1\bin\Debug\test1.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test1\test1\bin\Debug\test1.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test1\test1\bin\Debug\test1.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test1\test1\obj\Debug\test1.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test1\test1\obj\Debug\test1.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test1\test1\obj\Debug\test1.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test1\test1\obj\Debug\test1.csprojAssemblyReference.cache

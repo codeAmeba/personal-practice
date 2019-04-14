@@ -1,0 +1,7 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache

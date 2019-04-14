@@ -1,0 +1,7 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\ConsoleWrite\ConsoleWrite\bin\Debug\ConsoleWrite.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\ConsoleWrite\ConsoleWrite\bin\Debug\ConsoleWrite.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\ConsoleWrite\ConsoleWrite\bin\Debug\ConsoleWrite.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\ConsoleWrite\ConsoleWrite\obj\Debug\ConsoleWrite.csprojAssemblyReference.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\ConsoleWrite\ConsoleWrite\obj\Debug\ConsoleWrite.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\ConsoleWrite\ConsoleWrite\obj\Debug\ConsoleWrite.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\ConsoleWrite\ConsoleWrite\obj\Debug\ConsoleWrite.pdb

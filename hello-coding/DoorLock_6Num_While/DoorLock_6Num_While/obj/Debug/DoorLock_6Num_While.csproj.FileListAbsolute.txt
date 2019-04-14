@@ -1,0 +1,6 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_While\DoorLock_6Num_While\bin\Debug\DoorLock_6Num_While.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_While\DoorLock_6Num_While\bin\Debug\DoorLock_6Num_While.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_While\DoorLock_6Num_While\bin\Debug\DoorLock_6Num_While.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_While\DoorLock_6Num_While\obj\Debug\DoorLock_6Num_While.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_While\DoorLock_6Num_While\obj\Debug\DoorLock_6Num_While.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\DoorLock_6Num_While\DoorLock_6Num_While\obj\Debug\DoorLock_6Num_While.pdb

@@ -1,0 +1,6 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Variable\Variable\bin\Debug\Variable.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Variable\Variable\bin\Debug\Variable.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Variable\Variable\bin\Debug\Variable.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Variable\Variable\obj\Debug\Variable.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Variable\Variable\obj\Debug\Variable.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\Variable\Variable\obj\Debug\Variable.pdb

@@ -1,0 +1,6 @@
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test2\test2\bin\Debug\test2.exe.config
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test2\test2\bin\Debug\test2.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test2\test2\bin\Debug\test2.pdb
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test2\test2\obj\Debug\test2.csproj.CoreCompileInputs.cache
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test2\test2\obj\Debug\test2.exe
+C:\Users\moolj\OneDrive\바탕 화면\web\hello\test2\test2\obj\Debug\test2.pdb
