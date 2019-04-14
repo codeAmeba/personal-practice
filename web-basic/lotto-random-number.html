@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: white;
+            width: auto;
+        }
+        .btn {
+            width: 300px;
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #count {
+            border: 1px solid black;
+            width: 300px;
+            background-color: white;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h1>Lotto</h1>
+
+
+        <form>
+            <select id="count">
+                <option value="1">1회 - 1,000원</option>
+                <option value="2">2회 - 2,000원</option>
+                <option value="3">3회 - 3,000원</option>
+                <option value="4">4회 - 4,000원</option>
+                <option value="5">5회 - 5,000원</option>
+            </select>
+        </form>
+
+
+   
+    <!--Button trigger modal-->
+        <button type="button" id="lottoOutput" 
+        data-toggle="modal" data-target="#exampleModal"
+        class="btn btn-lg btn-block">Get Numbers</button>
+   
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                            <table class="table" id="lottoNumbers">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">#1</th>
+                                        <th scope="col">#2</th>
+                                        <th scope="col">#3</th>
+                                        <th scope="col">#4</th>
+                                        <th scope="col">#5</th>
+                                        <th scope="col">#6</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="lottoPrint()">Print</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+    <!--
+        로또 번호는
+        1~45까지의 정수 중에서 중복되지 않는 숫자 6개를 뽑는 게임
+        로또 용지 1장은 최대 5게임을 표현할 수 있음.
+        1게임 1,000원, 최대 1장은 5,000원
+        1) 로또 번호 1게임을 뽑게 해줌.
+        2) 로또 번호 5게임을 뽑게 해줌.
+        3) 로또 번호를 지정된 게임 수만큼 뽑게 해줌.
+        4) 지정된 게임 수만큼 뽑고, 비용을 함께 출력한다.
+    -->
+    <script type="text/javascript">
+
+        $(function() {
+            $('#lottoOutput').click(function() {
+                $('#lottoNumbers tbody').html('');
+
+                // 옵션으로 횟수 선택
+                var selectCount = $("#count option:selected").val();
+                for(j=0;j<Number(selectCount);j++) {
+                    var original_numbers = [];
+                    for(i=1;i<46;i++) {
+                        original_numbers.push(i);
+                    }
+                    var numbers = [];
+                    for(i=0;i<6;i++) {
+                        var number_index = Math.floor((Math.random() * original_numbers.length));
+                        var get_number = original_numbers[number_index];
+                        numbers.push(get_number);
+                        original_numbers.splice(number_index,1);
+                    }
+                    numbers.sort(function(a, b){return a-b});
+                    var row = '<tr><th scope="row">'+(j+1)+'</th><td>'+numbers[0]+'</td><td>'+numbers[1]+'</td><td>'+numbers[2]+'</td><td>'+numbers[5]+'</td><td>'+numbers[4]+'</td><td>'+numbers[5]+'</td>'
+                    $('#lottoNumbers tbody').append(row);
+                }
+            });
+        });
+        // 프린트 출력
+        function lottoPrint() {
+                window.print();
+            };
+    
+        
+
+        /*
+        function generate(size, lowest, highest) {
+	        var numbers = [];
+	        for(var i = 0; i < size; i++) {
+		        var add = true;
+		        var randomNumber = Math.floor(Math.random() * highest) + 1;
+		        for(var y = 0; y < highest; y++) {
+			        if(numbers[y] == randomNumber) {
+				        add = false;
+			        }
+		        }
+		            if(add) {
+			            numbers.push(randomNumber);
+		            } else {
+			            i--;
+		    }
+	    }
+  
+        var highestNumber = 0;
+        for(var m = 0; m < numbers.length; m++) {
+            for(var n = m + 1; n < numbers.length; n++) {
+                if(numbers[n] < numbers[m]) {
+                    highestNumber = numbers[m];
+                    numbers[m] = numbers[n];
+                    numbers[n] = highestNumber;
+                }
+            }
+        }
+  
+            document.getElementById("numbers").innerHTML = numbers.join(" - ");
+        }
+        */
+
+            //console.log(Math.random()); //0~1 사이의 숫자를 랜덤
+
+        /*
+    for(i=0;1<5;i++) {
+        var numbers = [];
+
+        while(numbers.length<6) {
+        var number = (Math.floor(Math.random() * 45) + 1);
+            if(numbers.indexOf(number)==-1) {
+                numbers.push(number);
+            }
+        }
+
+        numbers.sort(function(a, b){return a-b});
+        console.log(numbers)
+    }
+    */
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

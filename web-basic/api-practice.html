@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+
+</head>
+<body>
+    <!--
+        회원가입창 만들기
+        1. 아이디
+        2. 비밀번호
+        3. 이름
+        4. 주소 - 우편번호, 주소, 주소 디테일, 우편번호 찾기
+        5. 회원가입 확인 버튼
+
+        *회원 가입 확인 버튼을 눌렀을 때, 모든 결과를 하나로 합쳐서 alert창에 띄우기.
+
+        form tag
+            input, select, textarea
+            input - type => text, email, phone, date, password. hidden
+    -->
+    <div>
+        <div>
+            <input id="userId" type="text" name="userId" placeholder="아이디를 입력하세요.">
+            <input id="userIdSub" type="submit" value="사용">
+        </div>
+        <div>
+            <input id="password" type="password" name="password" placeholder="비밀번호를 입력하세요.">
+            <input id="passwordSub" type="submit" value="확인">
+        </div>
+        <div>
+            <input id="userName" type="text" name="userName" placeholder="이름을 입력하세요.">
+            <input id="userNameSub" type="submit" value="확인">
+        </div>
+        <div>
+            <input type="text" name="address" placeholder="도로명 주소 입력" id="address">
+            <input type="button" id="zipcode_search" value="주소 검색">
+        </div>
+    </div>
+
+ 
+
+    <input id="checkInfo" type="button" value="가입">
+
+
+        <script>
+
+                var i = '';
+                var n = '';
+                var p = '';
+
+                $(function() {
+                        $("#zipcode_search").click(function(){
+                        new daum.Postcode({
+                            oncomplete: function(data) {
+                            }
+                        }).open();
+                    });
+                });
+
+                $(document).ready(function() {
+                    $("#userIdSub").click(function() {
+                        event.preventDefault();
+                         i = $("#userId").val();
+                         if(i.length < 5) {
+                             alert("ID는 5자 이상으로 해주십시오.")
+                         } else {
+                             alert("사용 가능한 ID입니다.")
+                         }
+                    });
+                    $("#passwordSub").click(function() {
+                        event.preventDefault();
+                        p = $("#password").val();
+                        if(p.length < 8) {
+                             alert("PASSWORD는 8자 이상으로 해주십시오.")
+                         } else {
+                             alert("사용 가능한 PASSWORD입니다.")
+                         }
+                    });
+                    $("#userNameSub").click(function() {
+                        event.preventDefault();
+                        n = $("#userName").val();
+                        alert("사용 가능한 이름입니다.");
+                    });
+                    $("#checkInfo").click(function() {
+                        if(i.length < 5 || p.length < 8) {
+                            alert("입력하신 정보를 다시 확인해주십시오.");
+                        } else {
+                        alert(n + " 님 환영합니다!" + "(가입하신 ID는 " + i + "입니다.)");
+                        }
+                    });
+                });
+                
+
+
+
+
+
+            /*
+            $(document).ready(function() {
+                $("input#userIdSub").click(function() {
+                   var i = $("#userId").val();
+                });
+                $("input#passwordSub").click(function() {
+                   var p = $("#password").val();
+                });
+                $("input#userNameSub").click(function() {
+                   var n = $("#userName").val();
+                });
+            });
+                $(function() {
+                        $("#zipcode_search").click(function(){
+                        new daum.Postcode({
+                            oncomplete: function(data) {
+                                var a = $('#address').val(data.address);
+                            }
+                        }).open();
+                    });
+                });
+                */
+
+                
+                /*
+                "ID :" + [userId] + <br/> + "PASSWORD :" + [password]
+                    + <br/> + "NAME :" + [userName] + <br/> + "ADDRESS :" + [address]
+                */
+        </script>
+</body>
+</html>

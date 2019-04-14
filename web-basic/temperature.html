@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko, en">
+  <head>
+    <meta charset="utf-8" />
+    <title>화씨/섭씨 온도 변환</title>
+    <!-- 필수 과제 -->
+    <script type="text/javascript">
+      var turnC = 0;
+      var turnF = 0;
+
+      while (true) {
+        console.log("번호를 선택하세요.");
+        console.log("1. 섭씨를 화씨로 변환");
+        console.log("2. 화씨를 섭씨로 변환");
+        console.log("3. 프로그램 종료");
+
+        var menu = prompt("메뉴를 선택하세요.", "");
+
+        if (menu == "3") {
+          break;
+        }
+
+        if (menu == "1") {
+          if (turnF == 0) {
+            tempC = prompt("섭씨 온도를 입력해주세요.", "");
+            tempC = Number(tempC);
+            tempF = (tempC * 1.8 + 32).toFixed(1);
+            console.log(tempF + "°F");
+            saveC = tempC;
+            turnC++;
+          } else if (turnF == 1) {
+            console.log(tempC + "°C는 " + saveF + "°F");
+            turnF = 0;
+          }
+        } else if (menu == "2") {
+          if (turnC == 0) {
+            tempF = prompt("화씨 온도를 입력해주세요.", "");
+            tempF = Number(tempF);
+            tempC = ((tempF - 32) / 1.8).toFixed(1);
+            console.log(tempC + "°C");
+            saveF = tempF;
+            turnF++;
+          } else if (turnC == "1") {
+            console.log(tempF + "°F는 " + saveC + "°C");
+            turnC = 0;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!--
+      선택 과제
+      <h1 id="result"></h1>
+
+      <script type="text/javascript">
+        var menu = prompt(
+          "섭씨로 변환은 1번, 화씨로 변환은 2번을 눌러주세요.",
+          ""
+        );
+        if (menu > 2) {
+          prompt("1번, 2번 중에서 선택해주세요.");
+        }
+
+        var temp = prompt("온도를 입력해주세요.", "");
+
+        var tempF = (Number(temp) - 32) / 1.8; //화씨 변환
+        var tempC = Number(temp) * 1.8 + 32; //섭씨 변환
+
+        if (menu == 1) {
+          document.getElementById("result").innerHTML = tempF + "°F" + "입니다.";
+        } else if (menu == 2) {
+          document.getElementById("result").innerHTML = tempC + "°C" + "입니다.";
+        }
+
+        /*
+        (C-32)/1.8=F
+        (F*1.8)+32=C
+
+        1. 입력창에 온도 입력
+
+        2. 화/섭 버튼 선택
+
+        3-1. 화 선택
+        >입력값 가져옴
+        >섭씨-화씨 변환 계산
+        >결과 출력
+
+        3-2. 섭 선택
+        >입력값 가져옴
+        >화씨-섭씨 변환 계산
+        >결과 출력
+        */
+
+      </script>
+    -->
+  </body>
+</html>
